@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hand Sign Digit Recognition</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+  <h1 class="text-4xl font-bold text-blue-600 mb-4">Live Hand Digit Detection</h1>
+  <video id="video" width="640" height="480" autoplay class="border-4 border-blue-400 rounded-lg shadow-lg mb-4"></video>
+  <canvas id="canvas" width="640" height="480" style="display: none;"></canvas>
+  <p class="text-lg text-gray-700">Prediction: <span id="result" class="font-semibold text-green-600"></span></p>
+  <a href="/" role="button" class="px-4 py-2 text-xl btn btn-primary mt-10">Finish</a>
+
+  <script>
+    const video = document.getElementById("video");
+    const canvas = document.getElementById("canvas");
+    const context = canvas.getContext("2d");
+    const resultText = document.getElementById("result");
+
+    navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
+      video.srcObject = stream;
+    });
+
+    setInterval(() => {
+      context.drawImage(video, 0, 0, canvas.width, canvas.height);
+      const dataURL = canvas.toDataURL("image/jpeg");
+
+      fetch('/predict', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: `image=${encodeURIComponent(dataURL)}`
+      })
+        .then(response => response.json())
+        .then(data => {
+          resultText.textContent = data.prediction;
+        });
+    }, 500);
+  </script>
+</body>
+</html>
