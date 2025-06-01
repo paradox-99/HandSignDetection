@@ -5,10 +5,15 @@
     <title>Hand Sign Digit Recognition</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        #video {
+            transform: scaleX(-1);
+        }
+  </style>
 </head>
 <body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
 <h1 class="text-4xl font-bold text-blue-600 mb-4">Live Hand Digit Detection</h1>
-<video id="video" width="640" height="480" autoplay class="border-4 border-blue-400 rounded-lg shadow-lg mb-4"></video>
+<video id="video" width="640" height="480" autoplay playsinline class="border-4 border-blue-400 rounded-lg shadow-lg mb-4"></video>
 <canvas id="canvas" width="640" height="480" style="display: none;"></canvas>
 <p class="text-lg text-gray-700">Prediction: <span id="result" class="font-semibold text-green-600"></span></p>
 <a href="/" role="button" class="px-4 py-2 text-xl btn btn-primary mt-10">Finish</a>

@@ -57,15 +57,14 @@ def predict():
                 coords = []
                 for lm in hand_landmarks.landmark:
                     coords.extend([lm.x, lm.y, lm.z])
-                print(f"[INFO] Features shape: {len(coords)}")
                 X = np.array(coords).reshape(1, -1)
                 pred = int(model.predict(X)[0])
                 return jsonify({'prediction': pred})
         else:
-            print("[INFO] No hand landmarks detected")
+            # print("[INFO] No hand landmarks detected")
             return jsonify({'prediction': 'No hand detected'})
     except Exception as e:
-        print(f"[ERROR] {e}")
+        # print(f"[ERROR] {e}")
         return jsonify({'prediction': 'Error occurred'})
 
 if __name__ == '__main__':
