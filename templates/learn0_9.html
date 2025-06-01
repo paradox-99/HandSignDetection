@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Learn 0-9</title>
+</head>
+<body>
+<div>
+    <div class="w-full h-screen flex flex-col items-center justify-center">
+        <div class="flex flex-wrap justify-center items-center gap-4">
+            <div class="card card-border bg-base-100 w-80 h-44 bg-gray-300">
+                <div class="card-body items-center justify-center">
+                    <button class="btn w-full h-2/3 text-6xl text-bold" onclick="d0.showModal()">0</button>
+                </div>
+            </div>
+            <div class="card card-border bg-base-100 w-80 h-44 bg-gray-300">
+                <div class="card-body items-center justify-center">
+                    <button class="btn w-full h-2/3 text-6xl text-bold" onclick="d1.showModal()">1</button>
+                </div>
+            </div>
+            <div class="card card-border bg-base-100 w-80 h-44 bg-gray-300">
+                <div class="card-body items-center justify-center">
+                    <button class="btn w-full h-2/3 text-6xl text-bold" onclick="d2.showModal()">2</button>
+                </div>
+            </div>
+            <div class="card card-border bg-base-100 w-80 h-44 bg-gray-300">
+                <div class="card-body items-center justify-center">
+                    <button class="btn w-full h-2/3 text-6xl text-bold" onclick="d3.showModal()">3</button>
+                </div>
+            </div>
+            <div class="card card-border bg-base-100 w-80 h-44 bg-gray-300">
+                <div class="card-body items-center justify-center">
+                    <button class="btn w-full h-2/3 text-6xl text-bold" onclick="d4.showModal()">4</button>
+                </div>
+            </div>
+            <div class="card card-border bg-base-100 w-80 h-44 bg-gray-300">
+                <div class="card-body items-center justify-center">
+                    <button class="btn w-full h-2/3 text-6xl text-bold" onclick="d5.showModal()">5</button>
+                </div>
+            </div>
+            <div class="card card-border bg-base-100 w-80 h-44 bg-gray-300">
+                <div class="card-body items-center justify-center">
+                    <button class="btn w-full h-2/3 text-6xl text-bold" onclick="d6.showModal()">6</button>
+                </div>
+            </div>
+            <div class="card card-border bg-base-100 w-80 h-44 bg-gray-300">
+                <div class="card-body items-center justify-center">
+                    <button class="btn w-full h-2/3 text-6xl text-bold" onclick="d7.showModal()">7</button>
+                </div>
+            </div>
+            <div class="card card-border bg-base-100 w-80 h-44 bg-gray-300">
+                <div class="card-body items-center justify-center">
+                    <button class="btn w-full h-2/3 text-6xl text-bold" onclick="d8.showModal()">8</button>
+                </div>
+            </div>
+            <div class="card card-border bg-base-100 w-80 h-44 bg-gray-300">
+                <div class="card-body items-center justify-center">
+                    <button class="btn w-full h-2/3 text-6xl text-bold" onclick="d9.showModal()">9</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="/learn-sign-language" class="btn btn-primary mt-16">Back</a>
+        </div>
+    </div>
+    <div>
+        <dialog id="d0" class="modal">
+            <div class="modal-box w-11/12 max-w-3xl">
+                <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+                <h3 class="text-xl font-bold mb-4 text-center">Hand Sign for - 0</h3>
+                <div class="grid grid-cols-2 gap-5">
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign0-Sample1.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign0-Sample2.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign0-Sample3.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign0-Sample4.jpg') }}" class="rounded-md">
+                    </figure>
+                </div>
+            </div>
+        </dialog>
+        <dialog id="d1" class="modal">
+            <div class="modal-box w-11/12 max-w-3xl">
+                <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+                <h3 class="text-xl font-bold mb-4 text-center">Hand Sign for - 1</h3>
+                <div class="grid grid-cols-2 gap-5">
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign1-Sample1.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign1-Sample2.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign1-Sample3.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign1-Sample4.jpg') }}" class="rounded-md">
+                    </figure>
+                </div>
+            </div>
+        </dialog>
+        <dialog id="d2" class="modal">
+            <div class="modal-box w-11/12 max-w-3xl">
+                <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+                <h3 class="text-xl font-bold mb-4 text-center">Hand Sign for - 2</h3>
+                <div class="grid grid-cols-2 gap-5">
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign2-Sample1.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign2-Sample2.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign2-Sample3.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign2-Sample4.jpg') }}" class="rounded-md">
+                    </figure>
+                </div>
+            </div>
+        </dialog>
+        <dialog id="d3" class="modal">
+            <div class="modal-box w-11/12 max-w-3xl">
+                <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+                <h3 class="text-xl font-bold mb-4 text-center">Hand Sign for - 3</h3>
+                <div class="grid grid-cols-2 gap-5">
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign3-Sample1.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign3-Sample2.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign3-Sample3.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign3-Sample4.jpg') }}" class="rounded-md">
+                    </figure>
+                </div>
+            </div>
+        </dialog>
+        <dialog id="d4" class="modal">
+            <div class="modal-box w-11/12 max-w-3xl">
+                <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+                <h3 class="text-xl font-bold mb-4 text-center">Hand Sign for - 4</h3>
+                <div class="grid grid-cols-2 gap-5">
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign4-Sample1.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign4-Sample2.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign4-Sample3.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign4-Sample4.jpg') }}" class="rounded-md">
+                    </figure>
+                </div>
+            </div>
+        </dialog>
+        <dialog id="d5" class="modal">
+            <div class="modal-box w-11/12 max-w-3xl">
+                <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+                <h3 class="text-xl font-bold mb-4 text-center">Hand Sign for - 5</h3>
+                <div class="grid grid-cols-2 gap-5">
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign5-Sample1.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign5-Sample2.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign5-Sample3.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign5-Sample4.jpg') }}" class="rounded-md">
+                    </figure>
+                </div>
+            </div>
+        </dialog>
+        <dialog id="d6" class="modal">
+            <div class="modal-box w-11/12 max-w-3xl">
+                <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+                <h3 class="text-xl font-bold mb-4 text-center">Hand Sign for - 6</h3>
+                <div class="grid grid-cols-2 gap-5">
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign6-Sample1.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign6-Sample2.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign6-Sample3.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign6-Sample4.jpg') }}" class="rounded-md">
+                    </figure>
+                </div>
+            </div>
+        </dialog>
+        <dialog id="d7" class="modal">
+            <div class="modal-box w-11/12 max-w-3xl">
+                <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+                <h3 class="text-xl font-bold mb-4 text-center">Hand Sign for - 7</h3>
+                <div class="grid grid-cols-2 gap-5">
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign7-Sample1.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign7-Sample2.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign7-Sample3.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign7-Sample4.jpg') }}" class="rounded-md">
+                    </figure>
+                </div>
+            </div>
+        </dialog>
+        <dialog id="d8" class="modal">
+            <div class="modal-box w-11/12 max-w-3xl">
+                <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+                <h3 class="text-xl font-bold mb-4 text-center">Hand Sign for - 8</h3>
+                <div class="grid grid-cols-2 gap-5">
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign8-Sample1.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign8-Sample2.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign8-Sample3.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign8-Sample4.jpg') }}" class="rounded-md">
+                    </figure>
+                </div>
+            </div>
+        </dialog>
+        <dialog id="d9" class="modal">
+            <div class="modal-box w-11/12 max-w-3xl">
+                <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+                <h3 class="text-xl font-bold mb-4 text-center">Hand Sign for - 9</h3>
+                <div class="grid grid-cols-2 gap-5">
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign9-Sample1.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign9-Sample2.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign9-Sample3.jpg') }}" class="rounded-md">
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/digits/Sign9-Sample4.jpg') }}" class="rounded-md">
+                    </figure>
+                </div>
+            </div>
+        </dialog>
+    </div>
+</div>
+</body>
+</html>

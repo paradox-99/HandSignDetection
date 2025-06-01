@@ -25,6 +25,18 @@ def index():
 def goto():
     return render_template('translation.html')
 
+@app.route('/learn-sign-language')
+def learn():
+    return render_template('learn.html')
+
+@app.route('/learn_0-9')
+def learn0_9():
+    return  render_template('learn0_9.html')
+
+@app.route('/learn-bangla-alphabet')
+def learnbanglaAlphabhet():
+    return  render_template('learn-bangla-alphabet.html')
+
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
